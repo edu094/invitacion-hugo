@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Cumpleaños Hugo</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        background: linear-gradient(-45deg, #0d0d0d, #1a0033, #330066, #660033, #ff0080, #ff00ff);
+        background-size: 400% 400%;
+        animation: neonBackground 10s ease infinite;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Fondo animado en movimiento */
+    @keyframes neonBackground {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Marco neón */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 10px;
+        right: 10px;
+        bottom: 0px;
+        border: 5px solid #01FFFF;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #01FFFF, 0 0 40px #01FFFF;
+        animation: pulseBorder 3s infinite ease-in-out;
+        pointer-events: none;
+    }
+
+    @keyframes pulseBorder {
+        0%, 100% { box-shadow: 0 0 20px #01FFFF, 0 0 40px #01FFFF; }
+        50% { box-shadow: 0 0 30px #01FFFF, 0 0 60px #01FFFF; }
+    }
+
+    /* Destellos animados */
+    .spark {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #FFFF66;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #E6ED07, 0 0 20px #E6ED07;
+        animation: sparkle 3s infinite ease-in-out;
+    }
+    @keyframes sparkle {
+        0%, 100% { opacity: 0; transform: scale(0); }
+        50% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Animación de parpadeo neón */
+    @keyframes neonBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.85; }
+    }
+
+    /* Animación de brillo pulsante */
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+    }
+
+    h1, h2, .p2 {
+        animation: neonBlink 1.5s infinite alternate;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        color: #ccff00;
+		  margin-bottom: 20px;
+        text-shadow: 0 0 10px #ccff00, 0 0 20px #ccff00, 0 0 30px #ccff00;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #00ffff;
+		  margin-bottom: 20px;
+        text-shadow: 0 0 12px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+    }
+
+    /* 🔥 Texto principal en blanco puro con glow cyan parpadeante */
+    .p1 {
+        font-size: 1.25em;
+        color: #FFFFFF;
+        text-shadow: 
+            0 0 12px #00FFFF, 
+            0 0 20px #00FFFF, 
+            0 0 30px #00FFFF, 
+            0 0 40px #00FFFF;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        animation: neonBlink 1.8s infinite alternate;
+    }
+
+    .p2 {
+        font-size: 1.2em;
+        color: #FFFFFF;
+        text-shadow: 0 0 12px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        line-height: 1.5em;
+        margin-bottom: 20px;
+        margin: 1px 1.5px;
+    }
+
+    .p3 {
+        font-size: 1.0em;
+        color: #FFFFFF;
+        text-shadow: 0 0 12px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF;
+        line-height: 1.5em;
+        margin-bottom: 5px;
+        margin: 1px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 6px;
+        padding: 12px 25px;
+        background-color: #ff00ff;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+        text-decoration: none;
+        text-shadow: 0 0 5px #000;
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        transition: transform 0.2s ease;
+        animation: pulse 2s infinite ease-in-out;
+        position: relative;
+        z-index: 1;
+    }
+    .btn:hover {
+        transform: scale(1.08);
+    }
+</style>
+</head>
+<body>
+
+<!-- Destellos -->
+<div class="spark" style="top:20%; left:30%; animation-delay:0s;"></div>
+<div class="spark" style="top:50%; left:70%; animation-delay:1s;"></div>
+<div class="spark" style="top:80%; left:40%; animation-delay:2s;"></div>
+<div class="spark" style="top:35%; left:80%; animation-delay:1.5s;"></div>
+
+<h2>🎉¡Happy Birthday!🎉</h2>
+<h2>HUGO</h2>
+
+<h1>✨Prepárate para Brillar!✨</h1>
+<p class="p1">Te invito a celebrar mi cumpleaños en una noche llena de luces, colores y buena energía</p>
+<p class="p2"><strong>📅 Fecha:</strong> Sábado, 13-Sep-2025</p>
+
+<p class="p2"><strong>🎨 Temática:</strong> Party Neón</p>
+<br>
+<p class="p3">Nota: Regalito🎁 y</p>
+<p class="p3">Bebida a tu elección🍾</p>
+
+<a class="btn" href="https://maps.app.goo.gl/qjz4KZYfp5BDmxpw5?g_st=ipc" target="_blank">📍Ubicación</a>
+<br>
+<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdHO9LmhstxA7iynmrwLp3J65_6zOgUkqZJlexmzq9Ztxpujg/viewform?embedded=true">📋Formulario de Ingreso</a>
+
+</body>
+</html>
